@@ -33,7 +33,7 @@ A Node.js/Express/MongoDB application for managing students, courses, enrolments
 
    ```sh
    git clone https://github.com/vikas9238/certificateGeneration.git
-   cd certificate
+   cd certificateGeneration
    ```
 
 2. **Install dependencies:**
