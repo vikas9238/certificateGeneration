@@ -1,0 +1,580 @@
+{
+	"info": {
+		"_postman_id": "46fd1cdc-7582-42b8-ba54-531e47d54fe2",
+		"name": "Certificate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43323947"
+	},
+	"item": [
+		{
+			"name": "students",
+			"item": [
+				{
+					"name": "CreateStudent",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"vikashkumar9238-3@gmail.com\",\n    \"name\":\"Vikas Kumar\",\n    \"mobile\":\"1234567892\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:4000/api/v1/students/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"students",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllStudent",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:4000/api/v1/students/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"students",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getStudentDetails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:4000/api/v1/students/a6a035d4-5c12-4663-9ae8-f48d71a420c1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"students",
+								"a6a035d4-5c12-4663-9ae8-f48d71a420c1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateStudentDetails",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"vikashkumar9238-2@gmail.com\",\n    \"name\":\"Vikas Kumar\",\n    \"mobile\":\"1234567891\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:4000/api/v1/students/a6a035d4-5c12-4663-9ae8-f48d71a420c1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"students",
+								"a6a035d4-5c12-4663-9ae8-f48d71a420c1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteStudentDetails",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:4000/api/v1/students/25f408f2-233f-4899-9a23-19efec9de078",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"students",
+								"25f408f2-233f-4899-9a23-19efec9de078"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EmailVerify",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:4000/api/v1/students/verify/8390e5712ed56491649a920ce53a2ad2037eac6a9ec841f8bb60cf1aadeb8255",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"students",
+								"verify",
+								"8390e5712ed56491649a920ce53a2ad2037eac6a9ec841f8bb60cf1aadeb8255"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "resendEmailVerification",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"vikashkumar9238-2@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:4000/api/v1/students/resend-email",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"students",
+								"resend-email"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "certificate",
+			"item": [
+				{
+					"name": "downloadCertificate",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:4000/api/v1/certificates/download/e85deef7-7cc5-4ae4-9327-abadc0f4bc8b",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"certificates",
+								"download",
+								"e85deef7-7cc5-4ae4-9327-abadc0f4bc8b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllCertificateDetails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:4000/api/v1/certificates/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"certificates",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "generateCertificate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"studentId\":\"0f076709-1f84-4232-9c98-fe0ed3023023\",\n    \"courseId\":\"46047e4a-4d09-4a15-8a7a-eb2b2a354ae0\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:4000/api/v1/certificates/generate",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"certificates",
+								"generate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "course",
+			"item": [
+				{
+					"name": "addCourse",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"java\",\n    \"description\":\"Basic java\",\n    \"duration\":\"6 Month\",\n    \"startDate\":\"2025-06-25\",\n    \"endDate\":\"2025-12-25\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:4000/api/v1/course/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"course",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllCourse",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:4000/api/v1/course/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"course",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCourseDetails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:4000/api/v1/course/46047e4a-4d09-4a15-8a7a-eb2b2a354ae0",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"course",
+								"46047e4a-4d09-4a15-8a7a-eb2b2a354ae0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "courseUpdate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"javaScript\",\n    \"description\":\"Basic javaScript in details\",\n    \"duration\":\"6 Month\",\n    \"startDate\":\"2025-06-25\",\n    \"endDate\":\"2025-12-25\",\n    \"status\":\"in-progress\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:4000/api/v1/course/46047e4a-4d09-4a15-8a7a-eb2b2a354ae0",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"course",
+								"46047e4a-4d09-4a15-8a7a-eb2b2a354ae0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "courseEnroled",
+			"item": [
+				{
+					"name": "addEnrolment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"studentId\":\"a6a035d4-5c12-4663-9ae8-f48d71a420c1\",\n    \"courseId\":\"46047e4a-4d09-4a15-8a7a-eb2b2a354ae0\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:4000/api/v1/enrolment/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"enrolment",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllEnrolment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:4000/api/v1/enrolment/list",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"enrolment",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEnrolmentetails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:4000/api/v1/enrolment/42a26f77-418c-41b3-860a-a0f1550fde53",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"enrolment",
+								"42a26f77-418c-41b3-860a-a0f1550fde53"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateEnrolmentDetails",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\":\"dropped\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:4000/api/v1/enrolment/42a26f77-418c-41b3-860a-a0f1550fde53",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"enrolment",
+								"42a26f77-418c-41b3-860a-a0f1550fde53"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "allParticularCourse",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:4000/api/v1/enrolment/course/f5c22e65-0fb3-41d0-8b0f-449e112618e2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"enrolment",
+								"course",
+								"f5c22e65-0fb3-41d0-8b0f-449e112618e2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
